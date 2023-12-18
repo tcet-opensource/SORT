@@ -327,3 +327,8 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+.test-text{
+    text-align: center;
+}
