@@ -21,15 +21,16 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
 </head>
 
 <body>
     <!-- Navbar Start -->
 
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="mb-0 text-primary text-uppercase"><img src="img/logo.webp" alt="Sort Club Logo" width="20%"> SORT
+            <h1 class="mb-0 text-primary text-uppercase">
+                <img src="img/logo.webp" alt="Sort Club Logo" width="20%"> SORT
             </h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -37,16 +38,36 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About Us</a>
                 <a href="event.html" class="nav-item nav-link">Our Events</a>
                 <a href="magazine.html" class="nav-item nav-link">Magazine</a>
-
             </div>
-            <a href="#contact" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Contact<i
-                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the current page file name
+        var currentPage = window.location.pathname.split("/").pop();
+
+        // Get all the navbar links
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        // Loop through each link and set active class based on URL match
+        navLinks.forEach(function(link) {
+            // If the href of the link matches the current page, add the 'active' class
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+</script>
+
+
     <!-- Navbar End -->
     <br>
 
@@ -115,18 +136,16 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/DSC_0638.webp" alt="">
+                                <img class="img-fluid" src="img/core/Vighnesh_Mishra_President.jpg" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/niraj_raut_"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/vighnesh_m95_"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
-                                        href="https://www.linkedin.com/in/niraj-raut-30b539271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Niraj Raut</h5>
+                                <h5 class="text-uppercase">Vighnesh Mishra</h5>
                                 <span class="text-primary">President</span>
                             </div>
                         </div>
@@ -134,16 +153,16 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/stuti.webp" alt="">
+                                <img class="img-fluid" src="img/core/Mehwash shaikh- Vice President .JPG" alt="">
                                 <div class="team-social">
-                                    <a class="btn btn-square" href="https://www.instagram.com/stuti_s_2710"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/_cassiopeia_01"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Stuti Soni</h5>
+                                <h5 class="text-uppercase">Mehwash Shaikh</h5>
                                 <span class="text-primary">Vice President</span>
                             </div>
                         </div>
@@ -151,18 +170,18 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/anant.webp" alt="">
+                                <img class="img-fluid" src="img/core/Ayush Pandey- Secretary_.jpg" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/ana.nt3016"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/_ayushpandeyy_"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/in/anant-singh-6349a5219"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Anant Singh</h5>
+                                <h5 class="text-uppercase">Ayush Pandey</h5>
                                 <span class="text-primary">Secretary</span>
                             </div>
                         </div>
@@ -170,16 +189,16 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/reena.webp" alt="">
+                                <img class="img-fluid" src="img/core/Atharv pimple.JPG" alt="">
                                 <div class="team-social">
-                                    <a class="btn btn-square" href="https://www.instagram.com/_verma.reena"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/atharva_pimple_24"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Reena Verma</h5>
+                                <h5 class="text-uppercase">Atharva Pimple</h5>
                                 <span class="text-primary">Treasurer</span>
                             </div>
                         </div>
@@ -194,17 +213,17 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/kinjal.webp" alt="">
+                                <img class="img-fluid" src="img/core/sneha pandey.JPG" alt="">
                                 <div class="team-social">
-                                    <a class="btn btn-square" href="https://www.instagram.com/singhkinjal_"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/snehapandey_01"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/public-profile/settings?trk=public-profile"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Kinjal Singh</h5>
+                                <h5 class="text-uppercase">Sneha Pandey</h5>
                                 <span class="text-primary">Event Manager</span>
                             </div>
                         </div>
@@ -212,18 +231,18 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/adtiya_desai.webp" alt="">
+                                <img class="img-fluid" src="img/core/Sumeet Shah - Discipline Head.jpg" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/_adityaaaa.9"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/_crazzeee_shah_"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
 
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Aditya desai</h5>
+                                <h5 class="text-uppercase">Sumeet Shah</h5>
                                 <span class="text-primary">Discipline Head</span>
                             </div>
                         </div>
@@ -231,37 +250,37 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/devesh.webp" alt="">
+                                <img class="img-fluid" src="img/core/Adarsh Kesharwani - Technical Lead.JPG" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/dxvxsh_28/"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/adarshh.me"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/devesh-singh05/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/devesh-singh05/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
 
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Devesh Singh</h5>
-                                <span class="text-primary">Technical Head</span>
+                                <h5 class="text-uppercase">Adarsh Kesharwani</h5>
+                                <span class="text-primary">Technical Lead</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/kawal.webp" alt="">
+                                <img class="img-fluid" src="img/core/aniket patil.JPG" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/kawal_0902"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/Adp_88888"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/in/kawal-chaudhari-a364b3149"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Kawal Chaudhari</h5>
+                                <h5 class="text-uppercase">Aniket Patil</h5>
                                 <span class="text-primary">Marketing Head</span>
                             </div>
                         </div>
@@ -277,35 +296,35 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/kunal.webp" alt="">
+                                <img class="img-fluid" src="img/core/poornima.JPG" alt="">
                                 <div class="team-social">
-                                    <a class="btn btn-square" href="https://www.instagram.com/kp_4103"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/puurnimaa22"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Kunal Pamar</h5>
-                                <span class="text-primary">Joint Event Manager</span>
+                                <h5 class="text-uppercase">Poornima Kalekar</h5>
+                                <span class="text-primary">Publication Head</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/atharva.webp" alt="">
+                                <img class="img-fluid" src="img/core/shivangi.JPG" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/atharva_148"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/shivangiiiii_05 "><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/in/atharva-salvi-169865268"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Atharva Salvi</h5>
+                                <h5 class="text-uppercase">Shivangi Chouhan</h5>
                                 <span class="text-primary">Literary Head</span>
                             </div>
                         </div>
@@ -313,37 +332,118 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Sanika.webp" alt="">
+                                <img class="img-fluid" src="img/core/aadarsh pandey.png" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/sanikkaaaa__"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/aadarshp_77"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/sanika-shete"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/sanika-shete"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
 
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Sanika Shete</h5>
-                                <span class="text-primary">Joint Technical Head</span>
+                                <h5 class="text-uppercase">Aadarsh Pandey</h5>
+                                <span class="text-primary">Creative Head</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Sandesh.webp" alt="">
+                                <img class="img-fluid" src="img/core/harsh pal.JPG" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/sandeshparab_"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/yaarrharshh"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/in/sandesh-parab-a0a49a261"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Sandesh Parab</h5>
+                                <h5 class="text-uppercase">Harsh Pal</h5>
+                                <span class="text-primary">Joint Creative Head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/core/preyanksha.JPG" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-square" href="https://www.instagram.com/lanadel.prey"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <!-- <a class="btn btn-square"
+                                        href="https://www.linkedin.com/in/disha-dahanukar-a48863207"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Preyanksha Singh </h5>
+                                <span class="text-primary">Joint Publication head</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/core/Vignesh Alle - Joint technical head.jpg" alt="">
+                                <div class="team-social">
+
+                                    <a class="btn btn-square" href="https://www.instagram.com/vigneshalle__16"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Vignesh Alle</h5>
+                                <span class="text-primary">Joint Technical Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/core/Adarsh Tiwari-Joint Event Manager.JPG" alt="">
+                                <div class="team-social">
+
+                                    <a class="btn btn-square" href="https://www.instagram.com/adarshhtiwarii"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
+
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Adarsh Tiwari</h5>
+                                <span class="text-primary">Joint Event Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/core/tanishq.JPG" alt="">
+                                <div class="team-social">
+
+                                    <a class="btn btn-square" href="https://www.instagram.com/tanishq.satote07"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Tanishq Satote</h5>
                                 <span class="text-primary">Joint Marketing Head</span>
                             </div>
                         </div>
@@ -359,144 +459,268 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Disha.webp" alt="">
+                                <img class="img-fluid" src="img/core/Vedant Anand- Joint Secretary_.jpg" alt="">
                                 <div class="team-social">
-                                    <a class="btn btn-square" href="https://www.instagram.com/dishadahanukar04"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/vedant_anand"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
+                                    <!-- <a class="btn btn-square"
                                         href="https://www.linkedin.com/in/disha-dahanukar-a48863207"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Disha Dahanukar</h5>
-                                <span class="text-primary">Publication Head</span>
+                                <h5 class="text-uppercase">Vedant Anand</h5>
+                                <span class="text-primary">Joint Secretary</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/riya.webp" alt="">
+                                <img class="img-fluid" src="img/core/nandika.jpg" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/riyaaashetty_"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/nandika.bhardwajj"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Riya Shetty </h5>
-                                <span class="text-primary">Joint Publication Head</span>
+                                <h5 class="text-uppercase">Nandika Bhardwaj</h5>
+                                <span class="text-primary">Associate</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Drashti.webp" alt="">
+                                <img class="img-fluid" src="img/core/Khushi Chandel - Secretary Associate .jpg" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/__black_myth__"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/_khushichandel_"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
 
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Drashti Panchal</h5>
-                                <span class="text-primary">Joint Secretary</span>
+                                <h5 class="text-uppercase">Khushi Chandel</h5>
+                                <span class="text-primary">Associate</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Suhani.webp" alt="">
+                                <img class="img-fluid" src="img/core/jayesh.JPG" alt="">
                                 <div class="team-social">
 
-                                    <a class="btn btn-square" href="https://www.instagram.com/suhanii.mishra"><i
+                                    <a class="btn btn-square" href="https://www.instagram.com/dhore_jayesh"><i
                                             class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                            class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                             <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Suhani Mishra</h5>
+                                <h5 class="text-uppercase">Jayesh Dhore</h5>
                                 <span class="text-primary">Associate</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Tanushree Tiwari - creative associate .jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-square" href="https://www.instagram.com/x0xree._"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square"
+                                                href="https://www.linkedin.com/in/disha-dahanukar-a48863207"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Tanushree Tiwari</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/shivani.jpg" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/shivanipathak7496"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Shivani Pathak</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Priyanshi Jain- Literary associate.jpg" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/priyanshi4571"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+        
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Priyanshi Jain</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/anurag.png" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/anurag.0904"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Anurag Gupta</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Sneha Kanojiya- Marketting Associate.jpg" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-square" href="https://www.instagram.com/snehhaa_09"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square"
+                                                href="https://www.linkedin.com/in/disha-dahanukar-a48863207"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Sneha Kanojiya </h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Mahek Jain - Marketing Associate_.jpg" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/mahek_j_"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Mahek Jain</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Suhani Singh- Publication Associate_.jpg" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/_.suhaniiii__"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+        
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Suhani Singh</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/Janhavi Nautiyal- Publication Associate.JPG" alt="">
+                                        <div class="team-social">
+        
+                                            <a class="btn btn-square" href="https://www.instagram.com/_vivirizz"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Janhavi Nautiyal</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="team-item">
+                                    <div class="team-img position-relative overflow-hidden">
+                                        <img class="img-fluid" src="img/core/SAPTARSHI MAITI- PUBLICATION ASSOCIATE.JPG" alt="">
+                                        <div class="team-social">
+                                            <a class="btn btn-square" href="https://www.instagram.com/saptarshi__1004"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <!-- <a class="btn btn-square"
+                                                href="https://www.linkedin.com/in/disha-dahanukar-a48863207"><i
+                                                    class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
+                                    </div>
+                                    <div class="bg-secondary text-center p-4">
+                                        <h5 class="text-uppercase">Saptarshi Maiti</h5>
+                                        <span class="text-primary">Associate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+                
             </div>
         </div>
+        
 
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Sana.webp" alt="">
-                                <div class="team-social">
-
-                                    <a class="btn btn-square" href="https://www.instagram.com/sana._.2114"><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-
-                                </div>
-                            </div>
-                            <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Sana Perween</h5>
-                                <span class="text-primary">Associate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Tarang.webp" alt="">
-                                <div class="team-social">
-
-                                    <a class="btn btn-square" href="https://www.instagram.com/tarangr_18 "><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square" href="https://www.linkedin.com/in/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                            <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Tarang Rathod </h5>
-                                <span class="text-primary">Associate</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item">
-                            <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/core/Vighnesh.webp" alt="">
-                                <div class="team-social">
-
-                                    <a class="btn btn-square" href="https://www.instagram.com/vighnesh_m95"><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square"
-                                        href="https://www.linkedin.com/in/vighnesh-mishra-361b89257/"><i
-                                            class="fab fa-linkedin-in"></i></a>
-
-                                </div>
-                            </div>
-                            <div class="bg-secondary text-center p-4">
-                                <h5 class="text-uppercase">Vighnesh Mishra</h5>
-                                <span class="text-primary">Associate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
     </section>
     <!-- Team End -->
@@ -525,7 +749,7 @@
                             <div class="btn-square bg-dark flex-shrink-0 me-3">
                                 <span class="fa fa-phone-alt text-primary"></span>
                             </div>
-                            <span>+91 88794 29416</span>
+                            <span>+91 70454 49325</span>
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="btn-square bg-dark flex-shrink-0 me-3">
@@ -544,11 +768,22 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h4 class="text-uppercase mb-4">Newsletter</h4>
-                        <div class="position-relative mb-4">
-                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Your email">
-                            <button type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <div class="input-container position-relative mb-4">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email" required>
+                            <!-- Replace button with label to trigger the checkbox -->
+                            <label for="showModal" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</label>
+                        </div>
+                         <!-- Hidden Checkbox to trigger Modal -->
+                    <input type="checkbox" id="showModal">
+                    
+                    <!-- Modal (Pop-up Window) -->
+                    <div id="thankYouModal">
+                        <div class="modal-content">
+                            <h2>Thank you!</h2>
+                            <p>Thank you for signing up with SORT!</p>
+                            <!-- Close button for the modal -->
+                            <label for="showModal" class="btn btn-primary">Close</label>
+                        </div>
                         </div>
                         <div class="d-flex pt-1 m-n1">
                             <a class="btn btn-lg-square btn-dark text-primary m-1" target="_blank"
@@ -573,8 +808,11 @@
                             Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
-                            Designed By <a class="border-bottom" href="https://github.com/skyline-r34v">Vighnesh
-                                Mishra</a>
+                            Developed By <a class="border-bottom" href="https://adarshh.me/">Adarsh Kesharwani </a> 
+                            <a> & </a>
+                            <a class="border-bottom" href="https://www.linkedin.com/in/vignesh-alle-b95411236">Vignesh Alle</a>
+                            <br>
+                            Designed By <a class="border-bottom" href="https://www.linkedin.com/in/aadarsh-pandey-211336292">Aadarsh Pandey</a>
                         </div>
                     </div>
                 </div>

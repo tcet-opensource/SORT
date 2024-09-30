@@ -54,3 +54,17 @@
     
 })(jQuery);
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the current page's filename
+    const currentPage = window.location.pathname.split('/').pop();
+
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterate over the links and add 'active' class to the current page link
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
