@@ -4,10 +4,10 @@ Website of SORT Club TCET. All other clubs & professional bodies are encouraged 
 
 ## Preview
 #### Welcome/Hero Section
-![HOME PAGE](img/home.png)
+![HOME PAGE](assets/home.png)
 
 #### Club Events
-![EVENT PAGE](img/events.png)
+![EVENT PAGE](assets/events.png)
 
 #### Team
-![THE TEAM](img/team.png)
+![THE TEAM](assets/team.png)
