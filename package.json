@@ -1,0 +1,50 @@
+{
+  "name": "sortreact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@types/styled-jsx": "^2.2.9",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.1",
+    "jquery.easing": "^1.4.1",
+    "owl.carousel": "^2.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^7.1.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "styled-jsx": "^5.1.6",
+    "waypoints": "^4.0.1",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/css-modules": "^1.0.5",
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.10.2",
+    "@types/owl.carousel": "^2.3.6",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/react-slick": "^0.23.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.13.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.1",
+    "vite": "^6.0.7"
+  }
+}
